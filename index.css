@@ -1,0 +1,198 @@
+.main {
+    background-image: url("/Images/bgImage.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 758px;
+    display: flex;
+}
+
+.frontlogo {
+    display: flex;
+    justify-content: space-between;
+}
+
+#train {
+    width: 100px;
+    height: 100px;
+    margin: 10px 30px 10px 30px;
+}
+
+#irctc {
+    width: 100px;
+    height: 100px;
+    margin: 10px 30px 10px 30px;
+}
+
+.form {
+    width: 65%;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+.head {
+    display: flex;
+    color: white;
+    width: 65%;
+    height: 35px;
+    font-family: sans-serif;
+    padding-top: 60px;
+    padding-left: 70px;
+}
+
+.pnr {
+    display: flex;
+    background-color: #213D77;
+    width: 50%;
+}
+
+.pnrStatus {
+    padding-left: 65px;
+}
+
+.chart {
+    display: flex;
+    background-color: #213D77;
+    width: 50%;
+    margin-left: 10px;
+}
+
+.chartStatus {
+    padding-left: 30px;
+}
+
+.form-header {
+    display: flex;
+}
+
+.logo {
+    padding-left: 20px;
+}
+
+.text {
+    margin-left: 80px;
+    color: #213D77;
+}
+
+.fullForm {
+    padding-left: 70px;
+    width: 100%;
+}
+
+.line-1 {
+    display: flex;
+    margin-top: 10px;
+}
+
+.from {
+    padding-left: 25px;
+}
+
+#from {
+    width: 300px;
+    height: 25px;
+}
+
+.date {
+    margin-left: 8%;
+}
+
+#date {
+    height: 25px;
+    width: 200px;
+}
+
+#swapIcon {
+    width: 25px;
+    height: 25px;
+    padding-left: 150px;
+    padding-top: 10px;
+}
+
+.to {
+    padding-left: 25px;
+}
+
+#to {
+    width: 300px;
+    height: 25px;
+}
+
+.line-2 {
+    display: flex;
+}
+
+.classes {
+    margin-left: 8%;
+}
+
+#classes {
+    height: 25px;
+    width: 200px;
+}
+
+.category {
+    padding-left: 25px;
+    margin-top: 25px;
+}
+
+#category {
+    width: 300px;
+    height: 25px;
+}
+
+.concession {
+    padding-left: 25px;
+    margin-top: 30px;
+}
+
+.submit {
+    margin-top: 20px;
+    padding-left: 25px;
+}
+
+#submit {
+    border-radius: 6px !important;
+    background: #fb792b !important;
+    color: #fff !important;
+    border-color: #fb792b !important;
+    font-size: 1.4rem;
+    width: 30%;
+}
+
+#reset{
+    border-radius: 6px !important;
+    background: #fb792b !important;
+    color: #fff !important;
+    border-color: #fb792b !important;
+    font-size: 1.4rem;
+    width: 30%;
+}
+
+.bottomText {
+    width: 63%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    background-color: white;
+    margin-top: 25px;
+    margin-left: 70px;
+    padding: 5px 5px 10px 10px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.right-block {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-top: 300px;
+    font-size: x-large;
+}
+
+.color{
+    color: red;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC Next Generation eTicketing System</title>
+    <link rel="icon" type="favicon" href="/images/irctc.jpg">
+
+    <!-- External Links -->
+    <link rel="stylesheet" href="/index.css">
+    <script src="/index.js"></script>
+    <!-- External Links -->
+
+</head>
+
+<body>
+
+    <div class="frontlogo">
+        <div class="railwayLogo">
+            <img src="/Images/trainLogo.png" alt="Inidan Railway Logo" id="train">
+        </div>
+        <div class="irctcLogo">
+            <img src="/Images/irctcLogo.png" alt="IRCTC Logo" id="irctc">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="main">
+            <div class="left-block" style="width: 65%;">
+                <div class="head">
+                    <div class="pnr">
+                        <div class="pnrImage">
+                            <img src="/Images/pnr status.png" alt="PNR" style="width: 30px; padding-left: 20px;">
+                        </div>
+                        <div class="pnrStatus">
+                            <h3 style="margin-top: 10px;">PNR STATUS</h3>
+                        </div>
+                    </div>
+                    <div class="chart">
+                        <div class="chartImage">
+                            <img src="/Images/chart.png" alt="CHARTS" style="width: 30px; padding-left: 20px;">
+                        </div>
+                        <div class="chartStatus">
+                            <h3 style="margin-top: 10px;">CHARTS/VACANCY</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="javascript:void(0);">
+                    <div class="fullForm">
+                        <div class="form">
+                            <div class="form-header">
+                                <div class="logo">
+                                    <img src="/Images/75thLogo.jpg" alt="LOGO" style="width: 120px; height: 100px;">
+                                </div>
+                                <div class="text">
+                                    <h3 style="font-size: 30px;">BOOK TICKET</h3>
+                                </div>
+                            </div>
+                            <div class="line-1">
+                                <div class="from">
+                                    <div>
+                                        <label>From</label><span style="color: red;">*</span>
+                                    </div>
+                                    <input type="text" list="arrival" id="from" placeholder="FROM">
+                                    <datalist id="arrival">
+                                        <option value="CHANDIGARH - CDG">
+                                        <option value="GORAKHPUR - GKP">
+                                        <option value="LUCKNOW - LKO">
+                                        <option value="BASTI - BST">
+                                        <option value="BANARAS - BSBS">
+                                    </datalist>
+                                    <span class="color" id="arrive"></span>
+                                </div>
+                                <div class="date">
+                                    <div>
+                                        <label>DD/MM/YYYY</label><span style="color: red;">*</span>
+                                    </div>
+                                    <input type="date" id="date">
+                                    <span class="color" id="datetime"></span>
+                                </div>
+                            </div>
+
+                            <div class="swapIcon">
+                                <img src="/Images/swapIcon.png" alt="SWAP" id="swapIcon">
+                            </div>
+
+                            <div class="line-2">
+                                <div class="to">
+                                    <div>
+                                        <label>To</label><span style="color: red;">*</span>
+                                    </div>
+                                    <input type="text" list="destination" id="to" placeholder="TO">
+                                    <datalist id="destination">
+                                        <option value="MATHURA JN - MTJ">
+                                        <option value="MYSURU JN - MYS">
+                                        <option value="NEW DELHI - NDLS">
+                                        <option value="NAGPUR - NGP">
+                                        <option value="MUMBAI CENTRAL - BCT">
+                                    </datalist>
+                                    <span class="color" id="destinate"></span>
+                                </div>
+                                <div class="classes">
+                                    <div>
+                                        <label>All Classes</label><span style="color: red;">*</span>
+                                    </div>
+                                    <input type="text" list="allClasses" id="classes" placeholder="ALL CLASSES">
+                                    <datalist id="allClasses">
+                                        <option value="All Classes">
+                                        <option value="Anubhuti Class (EA)">
+                                        <option value="AC First Class (1A)">
+                                        <option value="Exec. Chair Car (EC)">
+                                        <option value="AC 2 Tier (2A)">
+                                        <option value="First Class (FC)">
+                                        <option value="AC 3 Tier (3A)">
+                                        <option value="AC 3 Economy (3E)">
+                                        <option value="AC Chair Car (CC)">
+                                        <option value="AC Chair Car (CC)">
+                                        <option value="Sleeper (SL)">
+                                        <option value="Second Sitting (2S)">
+                                    </datalist>
+                                    <span class="color" id="myClass"></span>
+                                </div>
+                            </div>
+
+                            <div class="line-3">
+                                <div class="category">
+                                    <div>
+                                        <label>Category</label><span style="color: red;">*</span>
+                                    </div>
+                                    <input type="text" list="allCategory" id="category" placeholder="CATEGORY">
+                                    <datalist id="allCategory">
+                                        <option value="GENERAL">
+                                        <option value="LADIES">
+                                        <option value="LOWER BERTH/SR.CITIZEN">
+                                        <option value="DIVYAANG">
+                                        <option value="TATKAL">
+                                        <option value="PREMIUM TATKAL">
+                                    </datalist>
+                                    <span class="color" id="type"></span>
+                                </div>
+                            </div>
+
+                            <div class="line-4">
+                                <div class="concession" style="font-family: 'Times New Roman', Times, serif;">
+                                    <span style="font-size: 15px;"><input type="checkbox" id="DC">Divyaang
+                                        Concession</span>
+                                    <span style="padding-left: 10px; font-size: 15px;"><input type="checkbox"
+                                            id="FWD">Flexible With
+                                        Date</span>
+                                    <span style="padding-left: 10px; font-size: 15px;"><input type="checkbox"
+                                            id="TWAB">Train With
+                                        Available
+                                        Berth</span><br><br>
+                                    <span style="font-size: 15px;"><input type="checkbox" id="RPC">Railway Pass
+                                        Concession</span>
+                                </div>
+                            </div>
+
+                            <div class="submit">
+                                <input type="submit" id="submit" value="Submit" onclick="myValidate()">
+                                <input type="reset" id="reset" value="Reset">
+                            </div><br>
+                        </div>
+                    </div>
+                </form>
+                <div class="bottomText">
+                    <p>Indian Railways have started provisioning of Linen in trains. <a
+                            href="https://contents.irctc.co.in/en/LINEN.html" style="color: #4AA1E4;">Click here</a> for
+                        the list of trains where
+                        Linen Services have been restarted as on date.</p><br>
+                </div>
+            </div>
+            <div class="right-block">
+                <h1>INDIAN RAILWAYS</h1>
+                <h3>Safety | Security | Punctuality</h3>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
