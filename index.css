@@ -109,7 +109,7 @@
     width: 25px;
     height: 25px;
     margin-top: 10px;
-    padding-left: 150px;
+    margin-left: 150px;
 }
 
 .to {
@@ -202,47 +202,4 @@ a:hover {
 
 .color {
     color: red;
-}
-
-
-/* Media query */
-@media screen and (max-width : 730px) {
-    .main {
-        width: 100%;
-        display: grid;
-    }
-
-    .frontlogo {
-        width: 100%;
-        display: grid;
-    }
-
-    .form {
-        width: 100%
-    }
-
-    .head {
-        width: 100%;
-    }
-
-    .pnrStatus {
-        width: 100%;
-    }
-
-    .pnr {
-        width: 100%;
-    }
-
-    .chart {
-        width: 100%;
-    }
-
-    .form-header {
-        width: 100%;
-        display: grid;
-    }
-
-    * {
-        box-sizing: border-box;
-    }
 }
