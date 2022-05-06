@@ -71,6 +71,11 @@
                                         <option value="LUCKNOW - LKO">
                                         <option value="BASTI - BST">
                                         <option value="BANARAS - BSBS">
+                                        <option value="MATHURA JN - MTJ">
+                                        <option value="MYSURU JN - MYS">
+                                        <option value="NEW DELHI - NDLS">
+                                        <option value="NAGPUR - NGP">
+                                        <option value="MUMBAI CENTRAL - BCT">
                                     </datalist>
                                     <span class="color" id="arrive"></span>
                                 </div>
@@ -78,13 +83,14 @@
                                     <div>
                                         <label>DD/MM/YYYY</label><span style="color: red;">*</span>
                                     </div>
-                                    <input type="date" id="date">
+                                    <input type="date" id="date" min="2050-01-01" max="2022-05-31"
+                                        onfocus="this.min=new Date().toISOString().split('T')[0]">
                                     <span class="color" id="datetime"></span>
                                 </div>
                             </div>
 
                             <div class="swapIcon">
-                                <img src="/Images/swapIcon.png" alt="SWAP" id="swapIcon">
+                                <img src="/Images/swapIcon.png" id="swapIcon" alt="SWAP" onclick="swapping()">
                             </div>
 
                             <div class="line-2">
@@ -99,7 +105,13 @@
                                         <option value="NEW DELHI - NDLS">
                                         <option value="NAGPUR - NGP">
                                         <option value="MUMBAI CENTRAL - BCT">
+                                        <option value="CHANDIGARH - CDG">
+                                        <option value="GORAKHPUR - GKP">
+                                        <option value="LUCKNOW - LKO">
+                                        <option value="BASTI - BST">
+                                        <option value="BANARAS - BSBS">
                                     </datalist>
+                                    <span class="color" id="result"></span>
                                     <span class="color" id="destinate"></span>
                                 </div>
                                 <div class="classes">
@@ -145,17 +157,14 @@
 
                             <div class="line-4">
                                 <div class="concession" style="font-family: 'Times New Roman', Times, serif;">
-                                    <span style="font-size: 15px;"><input type="checkbox" id="DC">Divyaang
-                                        Concession</span>
-                                    <span style="padding-left: 10px; font-size: 15px;"><input type="checkbox"
-                                            id="FWD">Flexible With
-                                        Date</span>
-                                    <span style="padding-left: 10px; font-size: 15px;"><input type="checkbox"
-                                            id="TWAB">Train With
-                                        Available
-                                        Berth</span><br><br>
-                                    <span style="font-size: 15px;"><input type="checkbox" id="RPC">Railway Pass
-                                        Concession</span>
+                                    <input type="radio" id="gender" name="age" value="male">
+                                    <label for="age1">Divyaang Concession</label>
+                                    <input type="radio" id="gender" name="age" value="female">
+                                    <label for="age2">Flexible With Date</label>
+                                    <input type="radio" id="gender" name="age" value="other">
+                                    <label for="age3">Train With Available Berth</label><br><br>
+                                    <input type="radio" id="gender" name="age" value="other">
+                                    <label for="age3">Railway Pass Concession</label><br>
                                 </div>
                             </div>
 

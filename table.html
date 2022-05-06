@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Data</title>
+    <link rel="stylesheet" href="/table.css">
+</head>
+
+<body>
+
+    <div class="search">
+        <input type="search" id="search" placeholder="search" onkeyup="searchFun()">
+    </div><br><br>
+
+    <div class="main">
+        <div class="table">
+            <table id="data">
+                <thead>
+                    <tr id="style">
+                        <td>Sr.No</td>
+                        <td>From</td>
+                        <td>To</td>
+                        <td>Date</td>
+                        <td>Class</td>
+                        <td>Category</td>
+                    </tr>
+                </thead>
+                <tbody id="tableData">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+
+        /* function for search button */
+        function searchFun() {
+            let filter = document.getElementById('search').value.toUpperCase();
+            let myTable = document.getElementById('data');
+            let tr = myTable.getElementsByTagName('tr');
+
+            for (let i = 0; i < tr.length; i++) {
+                let td = tr[i].getElementsByTagName('td')[1];
+                if (td) {
+                    let textValue = td.textContent || td.innerHTML;
+                    if (textValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = '';
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+
+        /* Get data from local storage */
+        var existingEntries = JSON.parse(localStorage.getItem('bookTicket'));
+        var tabledata = "";
+
+        for (let i = 0; i < existingEntries.length; i++) {
+            tabledata += "<tr>" +
+                "<td>" + Number(i + 1) + "</td>" +
+                "<td>" + existingEntries[i]['From'] + "</td>" +
+                "<td>" + existingEntries[i]['To'] + "</td>" +
+                "<td>" + existingEntries[i]['Date'] + "</td>" +
+                "<td>" + existingEntries[i]['Classes'] + "</td>" +
+                "<td>" + existingEntries[i]['Category'] + "</td>"
+            "</tr>";
+
+            document.getElementById('tableData').innerHTML = tabledata;
+        }
+    </script>
+    <!-- JavaScript -->
+</body>
+
+</html>
